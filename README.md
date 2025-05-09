@@ -35,8 +35,6 @@ Each folder contains problems relevant to that topic. Each problem is written in
 
 You can browse each folder to explore problems. To run a problem:
 
-```bash
-python3 path/to/problem.py
 
 All problems are self-contained and ready to run.
 🤝 Contributing
