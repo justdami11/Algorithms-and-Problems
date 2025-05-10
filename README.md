@@ -6,17 +6,11 @@ This repository is organized by topic—recursion, sorting, searching, strings, 
 ## 📁 Structure
 
 ├── recursion/
-
 ├── sorting/
-
 ├── search/
-
 ├── strings/
-
 ├── math/
-
 ├── data_structures/
-
 ├── README.md
 
 
