@@ -1,0 +1,36 @@
+#This program calculates and prints the Fibonacci sequence using recursion.
+#The user is prompted to enter a non-negative integer, and the program will display
+#the Fibonacci sequence up to the nth term. The program exits when the user enters 'q'.
+
+def fibonacci(n):
+    if n == 0 or n == 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+def main():
+    print("\n<<<< Fibonacci Sequence — Enter a non-negative integer ('q' to quit) >>>>\n")
+    while True:
+        user_input = input("Enter n (number of terms): ")
+
+        if user_input.lower() == 'q':
+            print("Exiting program.")
+            break
+
+        try:
+            n = int(user_input)
+            if n < 0:
+                print("Please enter a non-negative integer.")
+                continue
+
+            print(f"\nFibonacci sequence up to {n} terms:")
+            for i in range(n):
+                print(fibonacci(i))
+            print()  # Add a blank line for better spacing
+
+        except ValueError:
+            print("Invalid input. Please enter a valid integer or 'q' to quit.")
+
+
+if __name__ == "__main__":
+    main()
